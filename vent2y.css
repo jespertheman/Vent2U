@@ -134,11 +134,14 @@ nav{
 
 /*------------------Indhold til luftpartikel siden-----------------*/
 	.billedeluftpartikler{
-		grid-column: 3 / 5;
+		grid-column: 3 / 12;
 		grid-row: 2 / 9;
-		height: 720px;
-		width: 1190px;
+		width: 100%;
+  		height: auto;
 		padding-left: 30px;
+
+		/* height: 720px;
+		width: 1190px; */
 		
 	}
 
