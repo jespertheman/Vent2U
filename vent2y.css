@@ -135,11 +135,14 @@ nav{
 
 /*------------------Indhold fra lærerens dashboard-----------------*/
 .dashboardbillede{
-	grid-column: 3 / 5;
+	grid-column: 3 / 12;
 	grid-row: 2 / 9;
-	height: 635px;
-	width: 1175px;
-	padding-left: 20px;
+	width: 100%;
+	height: auto;
+	padding-left: 30px;
+
+	/* height: 635px;
+	width: 1175px; */
 }
 /*------------------Venstre navigation-----------------*/
 .venstrenav{
