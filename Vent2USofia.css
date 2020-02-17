@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	display: grid;
+	grid-template-columns: 100vw;
+	grid-template-rows: 100vh;
+}
+
+
+
+#wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 7fr;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+/*----------------------NAVIGATION-----------------------*/
+
+nav{
+	grid-column: 1 / 13;
+	grid-row: 1 / 2;
+	background-color: white;
+	box-shadow: 0 5px 5px -5px rgba(0,0,0,.2);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+
+.logo{
+	grid-column: 1 / 4;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 5%;
+	display: inline-block;
+}
+
+/*----------------Bl? avatar----------------*/
+.fa-user-circle{
+	grid-column: 12 / 13;
+	grid-row: 1 / 2;
+	color: #3699D0;
+	font-size: 70px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+
+/*-----------------DROP DOWN PIL-------------*/
+
+.dropdown {
+  	grid-column: 12 / 13;
+	grid-row: 1 / 2;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+.fa-caret-down{
+	color: #B7B7B7;
+}
+
+.dropknap {
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
+	background-color: rgba(255,255,255,0);
+	color: none;
+	padding: 2px;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+	}
+
+
+.dropdown-indhold {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-indhold a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+
+.fa-caret-down:hover{
+	color: white;
+}
+
+.dropdown-indhold a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-indhold {
+  	display: block;
+	top: 12%;
+}
+
+.dropdown:hover .dropknap {
+	background-color: #3699D0;
+}
+
+/*------------------"MAIN BODY"---------------*/
+
+.krop{
+	grid-column: 1 / 13;
+	grid-row: 2 / 3;
+	background-color: #EBEBEB;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+/*-----------Der er blevet lavet 13 columns and 8 rows til main body delen.
+			Du kan inds?tte dine ting ind der.-----------------*/
+
+
+/*-------------Knapper til spørgeskema og lokale status--------------*/
+
+.button1{
+grid-column: 3 / 6;
+grid-row: 3 / 3;
+background-color: #CBCBCB;
+border: none;
+color: black;
+}
+
+.button2{
+grid-column: 7/10;
+grid-row: 3 / 3;
+background-color: #CBCBCB; 
+border: none;
+color: black;
+}
