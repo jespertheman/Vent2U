@@ -133,6 +133,7 @@ nav{
 			Du kan indsætte dine ting ind der.-----------------*/
 
 
+
 /*---------------spørgerskema--------*/
 
 .skema {
@@ -196,6 +197,7 @@ nav{
 	/* height: 635px;
 	width: 1175px; */
 }
+
 
 /*------------------Venstre navigation-----------------*/
 .venstrenav{
@@ -348,4 +350,4 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
+
