@@ -132,7 +132,20 @@ nav{
 /*-----------Der er blevet lavet 13 columns and 8 rows til main body delen.
 			Du kan indsætte dine ting ind der.-----------------*/
 
-/*------------------Indhold til luftpartikel siden-----------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+			/*------------------Indhold til luftpartikel siden-----------------*/
 	.billedeluftpartikler{
 		grid-column: 3 / 12;
 		grid-row: 2 / 9;
