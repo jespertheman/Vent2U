@@ -145,7 +145,8 @@ nav{
 
 
 
-			/*------------------Indhold til luftpartikel siden-----------------*/
+
+/*------------------Indhold til luftpartikel siden-----------------*/
 	.billedeluftpartikler{
 		grid-column: 3 / 12;
 		grid-row: 2 / 9;
@@ -158,6 +159,19 @@ nav{
 		
 	}
 
+
+
+/*------------------Indhold fra lærerens dashboard-----------------*/
+.dashboardbillede{
+	grid-column: 3 / 12;
+	grid-row: 2 / 9;
+	width: 100%;
+	height: auto;
+	padding-left: 30px;
+
+	/* height: 635px;
+	width: 1175px; */
+}
 
 /*------------------Venstre navigation-----------------*/
 .venstrenav{
@@ -311,8 +325,3 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
-
-
-
-/*---------------------Dashboard Content-------------------------*/
