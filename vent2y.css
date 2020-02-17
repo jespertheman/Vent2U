@@ -133,6 +133,34 @@ nav{
 			Du kan indsætte dine ting ind der.-----------------*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------Indhold til luftpartikel siden-----------------*/
+	.billedeluftpartikler{
+		grid-column: 3 / 12;
+		grid-row: 2 / 9;
+		width: 100%;
+  		height: auto;
+		padding-left: 30px;
+
+		/* height: 720px;
+		width: 1190px; */
+		
+	}
+
+
+
 /*------------------Indhold fra lærerens dashboard-----------------*/
 .dashboardbillede{
 	grid-column: 3 / 12;
@@ -144,6 +172,7 @@ nav{
 	/* height: 635px;
 	width: 1175px; */
 }
+
 /*------------------Venstre navigation-----------------*/
 .venstrenav{
 	grid-column: 1 / 3;
