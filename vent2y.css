@@ -132,6 +132,18 @@ nav{
 /*-----------Der er blevet lavet 13 columns and 8 rows til main body delen.
 			Du kan indsætte dine ting ind der.-----------------*/
 
+
+/*------------------Indhold fra lærerens dashboard-----------------*/
+.dashboardbillede{
+	grid-column: 3 / 12;
+	grid-row: 2 / 9;
+	width: 100%;
+	height: auto;
+	padding-left: 30px;
+
+	/* height: 635px;
+	width: 1175px; */
+}
 /*------------------Venstre navigation-----------------*/
 .venstrenav{
 	grid-column: 1 / 3;
