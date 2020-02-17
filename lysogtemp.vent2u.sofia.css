@@ -1,0 +1,314 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	display: grid;
+	grid-template-columns: 100vw;
+	grid-template-rows: 100vh;
+}
+
+
+
+#wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 7fr;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+/*----------------------TOP NAVIGATION-----------------------*/
+
+nav{
+	grid-column: 1 / 13;
+	grid-row: 1 / 2;
+	background-color: white;
+	box-shadow: 0 5px 5px -5px rgba(0,0,0,.8);
+	border-style: solid;
+	border-color: #C1C1C1;
+	border-width: 1px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+
+.logo{
+	grid-column: 1 / 4;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 5%;
+	display: inline-block;
+}
+
+/*----------------Bl� avatar----------------*/
+.fa-user-circle{
+	grid-column: 12 / 13;
+	grid-row: 1 / 2;
+	color: #3699D0;
+	font-size: 70px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+
+/*-----------------DROP DOWN PIL-------------*/
+
+.dropdown {
+  	grid-column: 12 / 13;
+	grid-row: 1 / 2;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+.fa-caret-down{
+	color: #B7B7B7;
+}
+
+.dropknap {
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
+	background-color: rgba(255,255,255,0);
+	color: none;
+	padding: 2px;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+	}
+
+
+.dropdown-indhold {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-indhold a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+
+.fa-caret-down:hover{
+	color: white;
+}
+
+.dropdown-indhold a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-indhold {
+  	display: block;
+	top: 12%;
+}
+
+.dropdown:hover .dropknap {
+	background-color: #3699D0;
+}
+
+/*------------------"MAIN BODY"---------------*/
+
+.krop{
+	grid-column: 1 / 13;
+	grid-row: 2 / 3;
+	background-color: #EBEBEB;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+/*-----------Der er blevet lavet 13 columns and 8 rows til main body delen.
+			Du kan inds�tte dine ting ind der.-----------------*/
+
+/*------------------Venstre navigation-----------------*/
+.venstrenav{
+	grid-column: 1 / 3;
+	grid-row: 1 / 9;
+	background-color: white;
+	border-style: solid;
+	border-color: #C1C1C1;
+	border-width: 1px;
+	border-top: none;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.ultop{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+	grid-row: 1 / 4;
+}
+
+
+.ulbot{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+	grid-row: 7 / 9;
+}
+
+
+li{
+	border-bottom-style: solid;
+	border-color: #C1C1C1;
+	border-width: 1px;
+}
+
+li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+}
+
+
+
+li a.active {
+  background-color: #686868;
+  color: white;
+}
+
+
+
+li a:hover:not(.active) {
+  background-color: #757575;
+  color: white;
+}
+
+
+
+/*-----------------Skift klasse knap----------------*/
+
+.skiftklasse{
+	margin-left: 20%;
+
+}
+
+.skiftklasseknap{
+	text-decoration: none;
+	font-size: 12px;
+	color: #B7B7B7;
+}
+
+
+.skiftklasseknap:hover{
+	color: #4B4B4B;
+}
+
+
+/*---------------------Slider knap-------------------------*/
+
+
+.toggle{
+	display: block;
+	grid-column: 12 / 13;
+	margin-top: 3%;
+	margin-left: 5%;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #3699D0;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #3699D0;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/*-------Pictures----------*/
+
+
+
+.responsive {
+width: 100%;
+height: auto;
+grid-column: 3/12;
+grid-row: 2 / 9;
+	
+}
+
+.responsive2 {
+	width: 100%;
+height: auto;
+grid-column: 3/12;
+grid-row: 2 / 9;
+	
+}
+
+
+
+
+
+
+
